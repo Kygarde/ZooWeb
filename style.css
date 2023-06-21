@@ -4,7 +4,9 @@ html {
 body {
     background-color: rgb(230, 230, 230);
     margin: 0;
+    padding: 0;
 }
+/*Estilos del header*/
 header {
     background-color: rgb(45, 55, 60);
     display: flex;
@@ -12,55 +14,54 @@ header {
     align-items: center;
     padding: 1rem 2rem;
 }
+/*Logo*/
 .logo {
-    color: white;
     display: flex;
     align-items: center;
 }
-
 .logo #zoo {
     color: greenyellow;
 }
 .logo #world {
-    color: rgb(217, 255, 47);
+    color: rgb(255, 241, 47);
 }
 .logo img {
     width: 150px;
     border-radius: 1rem;
     margin-right: 1rem;
 }
+/**/
 header ul {
     list-style: none;
     display: flex;
 }
 header a {
     text-decoration: none;
-    color: rgb(150, 154, 157);
+    color: rgb(150, 150, 150);
     margin-inline: 0.5rem;
 }
 header a:hover {
     color: white;
 }
+/*Estilos del main*/
 #principal-container {
-    background-color: rgb(150, 230, 240);
+    background-color: rgb(199, 206, 211);
     max-width: 50%;
     margin-top: 1.5rem;
     margin-inline: auto;
     border-radius: 1.5rem;
     padding: 1rem;
 }
+#intro, .secondary-container section {
+    background-color: rgb(80, 185, 255);
+    color: rgb(100, 111, 255);
+}
 #intro {
-    max-width: 74%;
+    width: 700px;
     margin-bottom: 1.5rem;
     margin-inline: auto;
     padding: 1rem;
-    color: rgb(100, 111, 255);
-    background-color: rgb(80, 185, 255);
     border-radius: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #intro h2 {
     margin-top: 0;
@@ -74,17 +75,15 @@ h2 {
 .secondary-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .secondary-container section {
-    color: rgb(100, 111, 255);
-    background-color: rgb(80, 185, 255);
     height: 300px;
     width: 350px;
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
-    margin-inline: 1rem;
+    border-radius: 1.5rem;
+    margin-inline: 0.5rem;
 }
 .secondary-container section p a {
     color: rgb(100, 111, 255);
@@ -93,22 +92,13 @@ h2 {
 .secondary-container section p a:hover {
     color: rgb(6, 14, 255);
 }
-#news p {
-    text-align: center;
-}
-#resenias p {
-    text-align: center;
-}
-#morevisited p {
+#news p, #resenias p, #morevisited p, #trabaj p {
     text-align: center;
 }
 #trabaj {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 #trabajadora {
     width: 275px;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
 }
