@@ -1,18 +1,27 @@
+:root {
+    --color-fondo: rgb(247, 255, 133);
+    --color-header: rgb(0, 205, 128);
+    --color-container: rgb(16, 197, 142);
+}
+
 html {
     font-family: sans-serif;
 }
+
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: var(--color-fondo);
     margin: 0;
     padding: 0;
 }
+
 /*Estilos del header*/
 header {
-    background-color: rgb(45, 55, 60);
+    background-color: var(--color-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    border-bottom: 2.5px solid rgb(0, 0, 0);
 }
 /*Logo*/
 .logo {
@@ -36,31 +45,37 @@ header ul {
     display: flex;
 }
 header a {
+    transition: all 0.2s;
     text-decoration: none;
-    color: rgb(150, 150, 150);
-    margin-inline: 0.5rem;
+    background-color: rgb(83, 218, 167);
+    padding: 8px;
+    border-radius: 0.5rem;
+    color: rgb(0, 129, 80);
+    margin-inline: 0.2rem;
 }
 header a:hover {
-    color: white;
+    background-color: var(--color-header);
+    color: rgb(0, 0, 0);
 }
+/**/
 /*Estilos del main*/
 #principal-container {
-    background-color: rgb(199, 206, 211);
-    max-width: 50%;
+    background-color: var(--color-container);
+    width: 62%;
     margin-top: 1.5rem;
     margin-inline: auto;
     border-radius: 1.5rem;
     padding: 1rem;
 }
 #intro, .secondary-container section {
-    background-color: rgb(80, 185, 255);
-    color: rgb(100, 111, 255);
+    background-color: rgb(83, 218, 167);
+    color: rgb(53, 18, 0);
 }
 #intro {
-    width: 700px;
+    max-width: 1000px;
     margin-bottom: 1.5rem;
     margin-inline: auto;
-    padding: 1rem;
+    padding: 1rem 10px;
     border-radius: 1.5rem;
 }
 #intro h2 {
@@ -78,27 +93,40 @@ h2 {
     margin-bottom: 1rem;
 }
 .secondary-container section {
-    height: 300px;
-    width: 350px;
+    height: 450px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     border-radius: 1.5rem;
     margin-inline: 0.5rem;
 }
-.secondary-container section p a {
-    color: rgb(100, 111, 255);
+.secondary-container section p a, .secondary-container section a {
+    color: rgb(53, 18, 0);
     text-decoration: none;
 }
-.secondary-container section p a:hover {
-    color: rgb(6, 14, 255);
+.secondary-container section p a:hover, .secondary-container section a:hover {
+    color: rgb(0, 255, 191);
+}
+#news ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#news li {
+    margin-bottom: 1rem;
 }
 #news p, #resenias p, #morevisited p, #trabaj p {
     text-align: center;
+    padding-inline: 10px;
 }
 #trabaj {
     align-items: center;
 }
+#trabaj p, #trabajadora {
+    margin: auto 0;
+}
 #trabajadora {
-    width: 275px;
+    max-width: 375px;
     border-radius: 1.5rem;
 }
